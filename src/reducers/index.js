@@ -1,6 +1,6 @@
 // まず、Reducer を定義します。
 // 引数には、state の初期値と Dispatch される Action を設定します。
-const todos = (state = [], action) => {
+const todosReducer = (state = [], action) => {
   // そして、Action の type によってデータをどのように変更するのかを switch 文を用いて記述します。
   switch (action.type) {
     // Action の type が ADD_TODO のとき、
@@ -29,4 +29,4 @@ const todos = (state = [], action) => {
   }
 }
 
-export default todos
+export default todosReducer
