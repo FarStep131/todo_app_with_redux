@@ -5,7 +5,6 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import todosReducer from './reducers';
 
-// 以下追加
 const store = createStore(
   todosReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
